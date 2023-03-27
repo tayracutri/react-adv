@@ -1,9 +1,8 @@
-import { ReactElement } from 'react';
+import { Props as ProductCardProps} from "../components/ProductCard";
+import { ImageProps } from "../components/ProductImage";
+import { TitleProps } from "../components/ProductTitle";
+import { ButtonProps } from "../components/ProductButtons";
 
-export interface Props {
-    product: Product;
-    children?: ReactElement | ReactElement[] | React.ReactNode;
-  }
   
  export interface Product {
     id: string;
@@ -16,5 +15,13 @@ export interface Props {
     increaseBy: (value: number) => void;
     product: Product;
   }
+
+
+  export interface ProductCardHOCProps {
+    ({ children, product }: ProductCardProps ):JSX.Element,
+    Title: (Props: TitleProps) => JSX.Element,
+    Img: (Props: ImageProps) => JSX.Element,
+    Buttons: (Props:ButtonProps) => JSX.Element
+}
 
  

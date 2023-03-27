@@ -1,0 +1,17 @@
+.bg-dark{
+    background-color: rgb(45, 44, 44);
+}
+
+.text{
+    color: #fff;
+}
+
+.img{
+    padding: 10px;
+    border-radius: 20px;
+width: calc(100% - 20px);
+}
+.buttons button{
+    border: 1px solid #f9f4f4;
+   color: #e9e3e3;
+}
